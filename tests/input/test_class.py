@@ -14,13 +14,15 @@ class A:
         def __init__(self):
             print('A1.__init__')
 
-        def foo(self):
+        @staticmethod
+        def foo():
             print('A1.foo')
 
     def __init__(self):
         print('A.__init__')
 
-    def foo(self):
+    @staticmethod
+    def foo():
         print('A.foo')
 
 
@@ -28,12 +30,14 @@ class B:
     def __init__(self):
         print('B.__init__')
 
-    def bar(self):
+    @staticmethod
+    def bar():
         print('B.bar')
 
 
 class C(A, B):
-    def foobar(self):
+    @staticmethod
+    def foobar():
         print('C.foobar')
 
 
