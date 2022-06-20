@@ -1,13 +1,16 @@
 class C:
-    def foobar(self):
+    @staticmethod
+    def foobar():
         a = 1
 
 class B(C):
-    def barfoo(self):
+    @staticmethod
+    def barfoo():
         d = 1
 
 class F(C, B):
-    def raboof(self):
+    @staticmethod
+    def raboof():
         e = 1
 
 C.foobar()

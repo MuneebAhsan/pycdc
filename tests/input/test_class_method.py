@@ -1,5 +1,6 @@
 class MyClass:
-    def method(self, i):
+    @staticmethod
+    def method(i):
         if i is 5:
             print('five')
         elif i is not 2:

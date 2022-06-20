@@ -1,11 +1,14 @@
 class C:
-    def test1(self):
+    @staticmethod
+    def test1():
         a = 1
 
-    def test2(self, x, y, z):
+    @staticmethod
+    def test2(x, y, z):
         a = x * y + z
 
     # @staticmethod -- TODO: Fix decorators
+    @staticmethod
     def testS():
         a = 3
 
